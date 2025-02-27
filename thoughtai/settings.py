@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-v2dqtuz8y(8#3*m9-np7$eh!rb(c1@4h%3eei%7omm*7x^(g2j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["thoughtai-e18bcdc8c4a4.herokuapp.com", '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'thoughtai.onrender.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.render.com']
 
 # Application definition
 
