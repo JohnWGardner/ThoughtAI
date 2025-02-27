@@ -20,5 +20,6 @@ from blog import views  # Import the views module from the blog app
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.blog_view, name='blog'), # Add the new path
+    path('blog/', views.blog_view, name='blog'), # Add the new path for the blog view
+    path('', views.home_view, name='home'), # Add the new path for the home view
 ]
