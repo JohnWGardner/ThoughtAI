@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from blog import views  # Import the views module from the blog app
-from home import views  # Import the views module from the home app
+from blog import views as blog_views  # Import the views module from the blog app and then assign with a different name
+from home import views as home_views  # Import the views module from the home app and then assign with a different name
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', views.blog_view, name='blog'), # Add the new path for the blog view
-    path('', views.home_view, name='home'), # Add the new path for the home view
+    path('blog/', blog_views.blog_view, name='blog'),  # Add a URL pattern for the blog view
+    path('', home_views.home_view, name='home'), # Add a URL pattern for the home view
 ]
